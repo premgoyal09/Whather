@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-family: inherit;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  background-color: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+input {
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 20px;
+  border: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+#weather-box {
+  font-size: 30px;
+  display: flex;
+  margin: 40px;
+  color: #fff;
+}
+
+
+.loader {
+  animation: loader 400ms infinite alternate linear;
+}
+@keyframes loader {
+  form{
+    opacity: 1;
+    transform: translateX(-40px);
+  }
+  to{
+    opacity: 0.2;
+    transform: translateX(40px);
+  }
+}
